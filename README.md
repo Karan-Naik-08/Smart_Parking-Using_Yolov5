@@ -1,14 +1,41 @@
-# Smart_Parking-Using_Yolov5
-Trained a model using yolov5 that detect available space in parking lot
+# YOLOv5 Smart Parking System
+## Overview
+This project implements a Smart Parking System using YOLOv5, designed to detect empty parking spaces in a parking lot. By training a YOLOv5 model, the system accurately identifies available parking spots, making it easier to manage parking efficiently.
 
-Recommended to run this on Google Colab as it works smoothely (Coz My laptop was not able to handle it training process).
-Google Colab works best in my case.
+## Features
+- Object Detection: Detects available parking spaces in real-time using YOLOv5.
+- Custom Trained Model: Trained on a dataset specifically designed for parking spaces.
+- Google Colab Recommended: Due to computational limitations, this project is optimized to run on Google Colab for a smoother experience.
 
-First to Run this code first create a folder SmartParking in your drive and upload yolov5,CarP and train_data in this folder.
-If there is update in yolov5 version download it from official github of yolov5(https://github.com/ultralytics/yolov5.git) and pastethe file custom1.yaml(which is located in Changed File Folder) to yolov5>data folder 
+## Getting Started
+Prerequisites
+A Google Drive account to store the project files and mount on Colab.
+YOLOv5 (download the latest version from the official repository).
 
-Now open Copy_of_YOLOv5_Tutorial.ipynb in google colab and run the first step , This will mount your drive to the colab file and now we can acces files from drive to colab.
+## Setup Instructions
+- Create Folder on Google Drive: First, create a folder named SmartParking in your Google Drive.
 
-If you have created the Folder as mentioned you don't need to change anything (but if name of folder is different then change the directory accordingly "it should direct towards yolov5 folder")
 
-Then follow the steps mentioned In Copy_of_YOLOv5_Tutorial.ipynb this shall work fine .
+Upload the following to the SmartParking folder:
+- The yolov5 directory.
+- CarP (dataset).
+- train_data (dataset for training).
+
+## Custom Configuration:
+If there is an update in the YOLOv5 version, download the latest version from the official YOLOv5 GitHub.
+Copy the custom configuration file custom1.yaml (located in the Changed File Folder) to the yolov5 > data directory.
+
+## Run on Google Colab:
+Open Copy_of_YOLOv5_Tutorial.ipynb in Google Colab.
+Run the first step to mount your Google Drive.
+Ensure that the directory points to the yolov5 folder within SmartParking on your Google Drive.
+If your folder has a different name, update the directory paths accordingly.
+
+
+Follow the Steps in the Notebook:
+The notebook contains detailed instructions and steps to follow. If everything is set up correctly, it should run smoothly and detect parking spaces effectively.
+Recommendations
+
+
+Training Environment: It’s highly recommended to run the model training on Google Colab since it provides more computational power compared to a local machine, especially for training YOLOv5 models.
+Directory Structure: Make sure your directory structure is consistent with the instructions. If there are any deviations, update the paths accordingly in the notebook.
